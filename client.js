@@ -27,4 +27,15 @@ function collectInputs(event){
     title.val('');
     id.val('');
     annualSalary.val('');
+            console.log(employees);
+            
+    console.log(calculateMonthlyCost());
+}
+
+function calculateMonthlyCost(){
+    let totalCost = 0;
+    for(person of employees){
+        totalCost += Math.round(person.annualSalary/12);
+    }
+    return totalCost;
 }
