@@ -7,6 +7,13 @@ input{
     width: 100px
 }
 
+#annualSalaryInput{
+    width: 115px
+}
+
+#IDInput{
+    width: 110px
+}
 td{
     border: 1px solid black;
 }
@@ -81,7 +88,7 @@ h3{
 
 main{
     display: flex;
-
+    margin-top: 5%;
     justify-content: space-evenly;
 }
 

@@ -20,7 +20,7 @@ function collectInputs(event){
     let id = $('#IDInput');
     let annualSalary = $('#annualSalaryInput');
 
-    //create check to see if inputs are empty
+    //reset all red borders from inputs
     firstName.removeClass('redBorder');
     lastName.removeClass('redBorder');
     title.removeClass('redBorder');
@@ -35,9 +35,10 @@ function collectInputs(event){
         }
     }
 
+    //create check to see if inputs are empty
     if(firstName.val() === ''){
-        firstName.effect('shake', {distance: 3});
-        firstName.addClass('redBorder');
+        firstName.effect('shake', {distance: 3});//shake if empty
+        firstName.addClass('redBorder');//give a red border
     }
     if(lastName.val() === ''){
         lastName.effect('shake', {distance: 3});
