@@ -81,8 +81,8 @@ function collectInputs(event){
             let chartData = {
                 name: `${employee.firstName} ${employee.lastName}`,
                 data: [Math.round(Number(`${employee.annualSalary}`)/12)],
-                id: `${employee.employeeId}`
                 };
+
             series.push(chartData);
 
             //reset all input field values
@@ -156,13 +156,19 @@ function calculateMonthlyCost(){
         $('#totalMonthlyCost').css('background-color','red');
     }
     else{
-        $('#totalMonthlyCost').css('background-color','white');
+        $('#totalMonthlyCost').css('background-color','rgb(79, 185, 120)');
     }
 }
 
 
 //create a column chart using highcharts library, 
 function addEmployeeChart() {
+
+    if(!$('#employeeChart').length){
+        $(`<section id="employeeChart"></section>`).appendTo('main').effect('slide', 'slow');
+        //there is a bug that doesnt round border corners the first time it appears due to animation
+    }
+
     let chart = {
         type: 'column'
     };
@@ -198,6 +204,7 @@ function addEmployeeChart() {
         enabled: false //looks ugly when enabled
     };
 
+    //add variables as properties and values to an object
     let json = {};
     json.chart = chart; 
     json.title = title;   

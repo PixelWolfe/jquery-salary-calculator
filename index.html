@@ -3,65 +3,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="client.js"></script>
-
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <header>
-            <h3>Salary Calculator</h3>
-        </header>
-        <section>
-            <form action="">
-                <input id="IDInput" type="number" placeholder="Employee ID...">
-                <input id="firstNameInput" type="text" placeholder="First Name...">
-                <input id="lastNameInput" type="text" placeholder="Last Name...">
-                <input id="titleInput" type="text" placeholder="Job Title...">
-                <input id="annualSalaryInput" type="number" placeholder="Annual Salary...">
-                <button id="submitButton">Submit</button>
-            </form>
-        </section>
-        <section>
-           <table>
-               <thead>
-                   <tr>
-                       <th>Employee ID</th>
-                       <th>First Name</th>
-                       <th>Last Name</th>
-                       <th>Job Title</th>
-                       <th>Annual Salary</th>
-                       <th></th>
-                   </tr>
-               </thead>
-               <tbody>
-                    <!-- Exmaple of appended employee
+        <section id="calculator">
+            <header>
+                <h1>Employee Salary Calculator</h1>
+                <h4>Enter employ information to calculate monthly salary</h4>
+            </header>
+            <section id="forms">
+                <form action="">
+                    <input id="IDInput" type="number" placeholder="Employee ID...">
+                    <input id="firstNameInput" type="text" placeholder="First Name...">
+                    <input id="lastNameInput" type="text" placeholder="Last Name...">
+                    <input id="titleInput" type="text" placeholder="Job Title...">
+                    <input id="annualSalaryInput" type="number" placeholder="Annual Salary...">
+                    <button id="submitButton">Submit</button>
+                </form>
+            </section>
+            <section>
+            <table>
+                <thead>
                     <tr>
-                        <td>Bob</td>
-                        <td>Anderson</td>
-                        <td>Janitor</td>
-                        <td>10</td>
-                        <td>100000</td>
-                    </tr> 
-                 -->
-               </tbody>
-               <tfoot>
-                <tr>
-                </tr>
-                </tfoot>
-           </table>
+                        <th>Employee ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Job Title</th>
+                        <th>Annual Salary</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <!-- Exmaple of appended employee
+                        <tr>
+                            <td>Bob</td>
+                            <td>Anderson</td>
+                            <td>Janitor</td>
+                            <td>10</td>
+                            <td>100000</td>
+                        </tr> 
+                    -->
+                </tbody>
+                <tfoot>
+                    <tr id='blankRow'>
+                    </tr>
+                    </tfoot>
+            </table>
 
-           <h3 id="totalMonthlyCost">Total Monthly Cost: $0</h3>
+            <h3 id="totalMonthlyCost">Total Monthly Cost: $0</h3>
+            </section>
         </section>
-        <section id="employeeChart">
-
-        </section>
-        <footer>
-
-        </footer>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

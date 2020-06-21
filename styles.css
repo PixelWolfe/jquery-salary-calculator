@@ -1,12 +1,13 @@
 body{
     text-align: center;
+    background-color: rgb(177, 219, 177);
 }
 
 input{
-    width: 130px
+    width: 100px
 }
 
-table,td{
+td{
     border: 1px solid black;
 }
 
@@ -16,31 +17,33 @@ table,td{
 
 #totalMonthlyCost{
     width: 300px;
+    border-radius: 10px;
+    background-color: rgb(79, 185, 120);
 }
 
 
 
 tbody tr:nth-of-type(odd){
-    background-color: lightgray;
+    background-color: rgb(143, 207, 143);
 }
-
+tbody tr:nth-of-type(even){
+    background-color: rgb(174, 204, 174);
+}
 table{
     text-align: center;
-    background-color: rgb(161, 161, 161);
-    border-spacing: 0px;
+    background-color: rgb(160, 196, 160);
+    border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
 }
 
 th{
     width: 100px;
-    border-color: green;
     margin:0px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 tfoot{
-    border: black;
     /* width: 40px;
     height: 30px; */
     empty-cells: show;
@@ -72,5 +75,48 @@ h3{
 #employeeChart{
     width: 500px;
     height: 500px;
-    margin: 0 auto;
+    margin: 0;
+    border-radius: 20px;
+}
+
+main{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+section{
+    margin: 0px;
+}
+
+#blankRow{
+    height: 20px;
+}
+
+h1{
+    padding-top: 20px;
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+}
+
+#calculator{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+header{
+    background-color: rgb(134, 192, 134);
+    border-radius: 20px 20px 0px 0px;
+    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
+}
+
+h4{
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#forms{
+    padding-top: 15px;
 }
