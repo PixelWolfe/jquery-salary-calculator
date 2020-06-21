@@ -1,3 +1,76 @@
+body{
+    text-align: center;
+}
+
 input{
     width: 130px
+}
+
+table,td{
+    border: 1px solid black;
+}
+
+.redBackground{
+    background-color: red;
+}
+
+#totalMonthlyCost{
+    width: 300px;
+}
+
+
+
+tbody tr:nth-of-type(odd){
+    background-color: lightgray;
+}
+
+table{
+    text-align: center;
+    background-color: rgb(161, 161, 161);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    width: 100px;
+    border-color: green;
+    margin:0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+tfoot{
+    border: black;
+    /* width: 40px;
+    height: 30px; */
+    empty-cells: show;
+}
+
+.delete{
+    text-align: center;
+    border-radius:  4px;
+    background-color: rgb(255, 80, 74);
+}
+
+.delete:hover{
+    background-color: rgb(255, 184, 184);
+    cursor: pointer;
+}
+
+.redBorder{
+    border-color: red;
+}
+
+td{
+    padding: 4px 7px;
+}
+
+h3{
+    margin: 10px auto;
+}
+
+#employeeChart{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
 }

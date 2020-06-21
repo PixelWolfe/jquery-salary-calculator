@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="client.js"></script>
 
 </head>
@@ -16,15 +17,46 @@
         </header>
         <section>
             <form action="">
+                <input id="IDInput" type="number" placeholder="Employee ID...">
                 <input id="firstNameInput" type="text" placeholder="First Name...">
                 <input id="lastNameInput" type="text" placeholder="Last Name...">
-                <input id="titleInput" type="text" placeholder="Title...">
-                <input id="IDInput" type="number" placeholder="ID...">
+                <input id="titleInput" type="text" placeholder="Job Title...">
                 <input id="annualSalaryInput" type="number" placeholder="Annual Salary...">
                 <button id="submitButton">Submit</button>
             </form>
         </section>
         <section>
+           <table>
+               <thead>
+                   <tr>
+                       <th>Employee ID</th>
+                       <th>First Name</th>
+                       <th>Last Name</th>
+                       <th>Job Title</th>
+                       <th>Annual Salary</th>
+                       <th></th>
+                   </tr>
+               </thead>
+               <tbody>
+                    <!-- Exmaple of appended employee
+                    <tr>
+                        <td>Bob</td>
+                        <td>Anderson</td>
+                        <td>Janitor</td>
+                        <td>10</td>
+                        <td>100000</td>
+                    </tr> 
+                 -->
+               </tbody>
+               <tfoot>
+                <tr>
+                </tr>
+                </tfoot>
+           </table>
+
+           <h3 id="totalMonthlyCost">Total Monthly Cost: $0</h3>
+        </section>
+        <section id="employeeChart">
 
         </section>
         <footer>

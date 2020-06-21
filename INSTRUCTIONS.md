@@ -24,26 +24,26 @@ The application should ha vvan input form that collects _employee first name, la
     [x] loop through array of employees and add up their salaries / 12
     [x] return total sum
 
-[] create a place to view all employees on dom, ul list
-    [] create function to append employee li elements with unique tags
+[x] create a place to view all employees on dom, ul list
+    [x] create function to append employee li elements with unique tags
 
-[] create a place to display total monthly cost
-[] append the total monthly cost to the dom
-[] if total monthly cost > 20k change background to red
+[x] create a place to display total monthly cost
+[x] append the total monthly cost to the dom
+[x] if total monthly cost > 20k change background to red
 
-[] create a delete button 'x' that removes an employee from the DOM
-    [] research the .data() jquery function
-        [] removes employee from array and DOM
-        [] recalulate total monthly costs with function
+[x] create a delete button 'x' that removes an employee from the DOM
+    [x] research the .data() jquery function
+        [x] removes employee from array and DOM
+        [x] recalulate total monthly costs with function
     
 --- Stretch Goals ---
 
-[] Add styling that fits the assignment
-    [] red outlines when not filled in inputs
+[x] Add styling that fits the assignment
+    [x] red outlines when not filled in inputs
     
 [] Add extra functionality (your choice) to the assignment
     [] retrieve removed employee information and rejoin it to the array/dom/total
-    [] add input field shakes
+    [x] add input field shakes
 
 A 'Submit' button should collect the form information, store the information to calculate monthly costs, append information to the DOM and clear the input fields. Using the stored information, calculate monthly costs and append this to the to DOM. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
 
