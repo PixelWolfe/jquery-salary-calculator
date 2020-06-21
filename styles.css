@@ -52,11 +52,11 @@ tfoot{
 .delete{
     text-align: center;
     border-radius:  4px;
-    background-color: rgb(255, 80, 74);
+    background-color: rgb(228, 112, 108);
 }
 
 .delete:hover{
-    background-color: rgb(255, 184, 184);
+    background-color: rgb(253, 150, 150);
     cursor: pointer;
 }
 
