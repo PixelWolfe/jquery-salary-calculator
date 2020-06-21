@@ -94,7 +94,6 @@ function collectInputs(event){
         
             console.log(employeesArray);
             console.log(calculateMonthlyCost());
-        
     }
 }
 
@@ -140,7 +139,7 @@ function calculateMonthlyCost(){
     $(`#${employee.employeeId}`).on('click',deleteAndUpdateTotal);
     }
 
-    //create chart display with highCharts
+    //create/recreate chart display with highCharts
     addEmployeeChart();
 
     //start from 0, add all employees.annualSalary/12 to this new total
@@ -174,7 +173,7 @@ function addEmployeeChart() {
 
     let subtitle = {
         text: 'Max Monthly Budget: $20,000'
-    }
+    };
 
     let xAxis = {
         categories: ['Employees']
